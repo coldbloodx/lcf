@@ -1,0 +1,4 @@
+mysql> GRANT ALL PRIVILEGES ON *.* TO root@"%" IDENTIFIED BY "123456";
+mysql> flush privileges;
+
+

@@ -1,0 +1,20 @@
+by Nathanin OSX, tech Tags: osx, osx-command-line, osx-lion, osx-terminal, terminal
+
+Or the default shell of any user for that matter. I don’t know if this is recommended or not, but changing from /bin/sh to /bin/bash will enable tab-completion, and since I’m a lazy admin that’s what I’ll do. (Plus, less keystrokes = longer hardware life for my keyboard.)
+
+This command will display the user’s default shell (replace root with desired username):
+
+rivendell:~ root# dscl . -read /Users/root UserShell
+Now change the shell (in this case to /bin/bash):
+
+rivendell:~ root# dscl . -change /Users/root UserShell /bin/sh /bin/bash
+Make sure it was changed:
+
+rivendell:~ root# dscl . -read /Users/root UserShell
+UserShell: /bin/bash
+rivendell:~ root# echo $0
+-sh
+rivendell:~ root# su -
+rivendell:~ root# echo $0
+-bash
+

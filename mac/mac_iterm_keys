@@ -1,0 +1,23 @@
+1. alt-d
+I don't have a mac handy, but ESC d should in theory do the same thing that ALT-d does.
+NOTE: this means hitting ESC, releasing it, then hitting d. Look ma, no key chords.
+
+2. ctrl+arrow
+Command-; to bring up the Preference menu
+Select Keys tab
+Click + button on the bottom of the right section (see the red cycle on the screen shot)
+Add shortcut key (see the red rectangle on the screen shot) for alt-f and alt-b(escape + key sequences)
+Profit
+
+3. alt + arrow
+如果什么都不改动，可以使用 option+← 和 option+→ 来代替 Alt+B 和 Alt+F ，达到相同的效果。
+我们还能修改iTerm2的设置来正常使用这个快捷键。方法是：
+1.打开菜单iTerm - Preferences，选择Profiles标签页，再点到Keys选项。
+2.在Profile Shortcut Keys(快捷键映射列表)下面点+按钮，新增两个快捷键。
+
+3.第一个快捷键：在Keyboard Shortcut按下 option+F ，Action选择Send Hex Code，最后在输入框输入下面内容
+0x1b 0x1b 0x5b 0x43
+
+4.第二个快捷键：在Keyboard Shortcut按下 option+B ，Action选择Send Hex Code，最后在输入框输入下面内容
+0x1b 0x1b 0x5b 0x44
+然后就可以用 option+F 和 optœ

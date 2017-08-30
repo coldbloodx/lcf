@@ -1,0 +1,11 @@
+mac音量无法调节解决方案
+本本升级到10.9，突然声音无法调节了，图标成灰色了，在百度找了很久，偶尔发现这个解决方案，当小白鼠之后，声音恢复正常了，所以转发此帖，希望对出现这种情况的有所帮助。
+
+1. 打开终端,输入 sudo vim /System/Library/LaunchDaemons/ com.apple.audio.coreaudiod.plist
+2. 上面这条命令可能需要你的登陆密码,没有直接回车
+3. 找到<key>KeepAlive</key>的下面一行,即<false/>
+4. 键盘移动光标到<false/>处,先按 i 进入编辑模式,再把 false 改为 true 5. 按 esc 再输入 :wq (冒号wq),编辑器会自动保存退出
+6. 重启系统看看效果
+还有个临时解决方法,也是打开终端然后
+sudo kill -9 `ps ax|grep 'coreaudio[a-z]' |awk '{print $1}'` 
+意思是重启⼀一下 coreaudio 服务。

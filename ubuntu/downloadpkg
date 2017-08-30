@@ -1,0 +1,7 @@
+Run sudo apt-get clean first.This will clear you var/cache/apt/archives directory. Then install it on the system with only default applications.All the dependencies will be saved in var/cache/apt/archives directory. Copy contents of var/cache/apt/archives to your CD along with your deb file.
+
+Alternatively if you know package name Run these commands to download the package with all its necessary dependencies from repository:-
+
+sudo apt-get --download-only -o Dir::Cache="/path/to/destination/dir/" \
+                                                -o Dir::Cache::archives="./" install package_name
+                                                Copy the folder on your CD. Run sudo dpkg -i *.debto install the software (along with its dependencies).

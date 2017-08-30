@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <localRepository>C:\Users\IBM_ADMIN\.m2\repository</localRepository>
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <repositories>
+                <repository>
+                    <id>local-nexus</id>
+                    <url>http://xabuild1.eng.platformlab.ibm.com:8080/nexus/content/groups/public/</url>
+                    <releases>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+                <repository>
+                    <id>local-release-nexus</id>
+                    <url>http://xabuild1.eng.platformlab.ibm.com:8080/nexus/content/repositories/thirdparty/</url>
+                    <releases>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+    <activeProfiles>
+        <activeProfile>dev</activeProfile>
+    </activeProfiles>
+    <servers>
+        <server>
+            <id>local-release-nexus</id>
+            <username>admin</username>
+            <password>admin123</password>
+        </server>
+    </servers>
+</settings>

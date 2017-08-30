@@ -1,0 +1,5 @@
+password for root is not set:
+mysqladmin -u root password "newpass"
+
+password for root is set:
+mysqladmin -u root password oldpass "newpass"
