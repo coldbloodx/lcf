@@ -68,6 +68,10 @@ _EOF
     /usr/share/migrationtools/migrate_base.pl > /tmp/base.ldif
     
     ldapadd -x -w $rootpw -D "cn=$rootdn,dc=$basedn,dc=com" -f /tmp/base.ldif
+
+    # migrate_users.pl to create users
+    # migrate_groups.pl to create groups
+    # ldapadd -x to add them to ldap servers.
 }
 
 
