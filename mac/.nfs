@@ -1,0 +1,3 @@
+#!/bin/bash
+
+mount_smbfs -onoexec //leo:letmein@linuxcompiler/data /Users/wuxian/nfsworkspace/

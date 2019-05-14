@@ -1,0 +1,132 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost
+
+192.168.2.180 tenv
+192.168.2.117 vm1604
+
+9.21.52.23 proxy23
+9.21.52.38 proxy38
+9.21.54.27 rayserver
+
+#ldap password change hosts
+9.21.55.40 intel4 # dead
+9.21.52.121 ns01x01
+
+9.21.52.39 haswell05
+
+9.119.131.230 office
+9.119.131.231 csserver  #office pm
+
+# hq host
+9.3.232.23 hqppcpm
+9.37.251.192 rayppcpm
+
+#ppcle lsf build hosts
+9.21.52.185 ubu14bld
+
+9.21.55.97 hqarmcn2  #centos 7
+9.21.55.86 hqarmcn3  #ubuntu 14.04
+9.21.55.94 hqarmcn4  #ubuntu 14.04 
+9.21.53.71 hqarmmn
+9.21.59.36 supp20
+
+#laworks HQ proxy
+9.21.61.148 laworkshq #ubuntu 16.04.3
+
+9.21.54.106 lsf1x106.ma.platformlab.ibm.com lsf1x106
+9.21.54.107 lsf1x107.ma.platformlab.ibm.com lsf1x107
+9.21.54.108 lsf1x108.ma.platformlab.ibm.com lsf1x108
+9.21.54.109 lsf1x109.ma.platformlab.ibm.com lsf1x109
+
+
+# HQ test machines:
+ib16b02 9.21.53.232
+
+#xian nfs server @letmein
+9.111.251.179 xianwunfs
+#xian compiler rhel 4.x
+9.111.251.178 linuxcompiler
+#xianwu hvs @Red1linux@
+9.111.251.177 xianwuhv01
+9.111.251.176 xianwuhv02
+
+#xianwu ldap @letmein
+9.111.251.175 xianwuldap
+
+
+9.111.250.84  xianwuhv03
+
+# laworks00 related hosts on xianwuhv01
+9.111.251.60 laworks00
+
+
+# gseed00 and gseed01 related hosts on xianwuhv03
+#gseed hosts
+9.111.250.85 gseed00
+9.111.250.86 gseed01
+
+#centos 7.6
+9.111.250.240 ccn001
+9.111.250.241 ccn002
+9.111.250.242 ccn003
+
+#rhel 7.6
+9.111.250.243 rcn001
+9.111.250.244 rcn002
+9.111.250.245 rcn003
+
+#ubuntu 18.04
+9.111.250.246 ucn001
+9.111.250.247 ucn002
+9.111.250.248 ucn003
+
+#hosts on xianwuhv01
+9.111.251.62 ucn01
+9.111.251.63 ucn02
+9.111.251.64 ucn03
+9.111.251.65 ucn04
+9.111.251.66 ucn05
+9.111.251.67 ucn06
+
+9.111.251.68 ccn01
+9.111.251.69 ccn02
+9.111.251.70 ccn03
+9.111.251.71 ccn04
+9.111.251.72 ccn05
+9.111.251.73 ccn06
+
+#hosts on xianwuhv02
+9.111.251.74 rcn01
+9.111.251.75 rcn02
+9.111.251.76 rcn03
+9.111.251.77 rcn04
+9.111.251.78 rcn05
+9.111.251.79 rcn06
+9.111.251.80 rcn07
+
+
+#lsf hv # lsfadmin
+9.111.251.135 lsfhv
+#lsf test compute on lsfhv
+9.111.251.161 lsfcn1
+9.111.251.162 lsfcn2
+9.111.251.163 lsfcn3
+9.111.251.164 lsfcn4
+#lsf compiler
+9.111.251.165 compiler
+
+
+
+114.116.145.166 devilworks
+
+#ling cui hosts
+9.111.255.89 rhel72
+9.111.255.52 rhel71
+9.111.251.105 xar13u30
