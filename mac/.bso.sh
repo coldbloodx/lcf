@@ -10,7 +10,7 @@ username=xwuxwu@cn.ibm.com
 password=2wsx3edc@IBM
 
 hqhost=proxy23
-xahost=laworks
+xahost=9.111.251.179
 bjhost=9.111.157.91
 
 echo "bso for xa gateway"
