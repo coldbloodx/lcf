@@ -279,7 +279,7 @@ objectClass: Organization
 objectClass: top
 dc: $BASEDC
 o: Corporation
-description: LDAP server for IBM
+description: LDAP server for xxx 
 
 dn: $ADMIN_SUB_DOMAIN,$BASE
 objectClass: dcObject

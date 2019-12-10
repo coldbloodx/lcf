@@ -1,6 +1,5 @@
 #!/bin/sh
  
-# Copyright IBM 2014 
 # This tool is used to enable LDAP for PCM and install LDAP client on PCM MN.
 # Define following environment variables could run this command in silent mode
 ## PCM_LDAP_SERVER_URL=
@@ -50,9 +49,9 @@ _CP="/bin/cp"
 # Product Name.
 PRODUCTNAME=none
 if [ -f "/etc/pcm-release" ]; then
-  PRODUCTNAME="IBM Platform Cluster Manager"
+  PRODUCTNAME="Platform Cluster Manager"
 elif [ -f "/etc/redhat-release" ]; then
-  PRODUCTNAME="IBM Platform HPC"
+  PRODUCTNAME="Platform HPC"
 fi
  
 log()

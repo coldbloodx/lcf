@@ -2,12 +2,8 @@
 
 set -x 
 
-username=xwuxwu@cn.ibm.com
-#password=pconline.com
-#password=passw0rd@IBM
-#password=issue@IBM
-#password=1qaz2wsx@IBM
-password=2wsx3edc@IBM
+username=
+password=
 
 hqhost=proxy23
 xahost=9.111.251.179
